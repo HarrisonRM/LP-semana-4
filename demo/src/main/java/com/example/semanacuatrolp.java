@@ -16,7 +16,8 @@ public class semanacuatrolp {
         valorTotal = valorPropina + valorCuenta;
         System.out.println("----------FACTURA----------");
         System.out.println("El valor de tu cuenta es: " + valorCuenta + " COP ");
-        System.out.println("El porcentaje de tu propina es: " + porcentajePropina + "%");
+        System.out.println("El porcentaje de tu propina es: " + porcentajePropina +
+        "%");
         System.out.println("El valor de tu propina es: " + valorPropina + " COP");
         System.out.println("El total a pagar es:" + valorTotal + " COP ");
         System.out.println("gracias por visitarnos, regresa pronto.<3");
@@ -36,14 +37,27 @@ public class semanacuatrolp {
         precioTotal = precioDistancia + precioTiempo + tarifaBase;
         String precio = "precioTotal";
         double valor = precioTotal;
-        String mensaje = String.format("----El precio de tu viaje es $%.2f COP----", valor);
+        String mensaje = String.format("----El precio de tu viaje es $%.2f COP----",
+        valor);
 
         System.out.println(mensaje);
         System.out.println("/////////////////////////////////////////////////////");
 
-        scanner2.close();
+        Scanner scanner3 = new Scanner(System.in);
+        String codificado = "H0l4  MUnD0,  3st0  3s  Un  m3ns4j3  s3cr3t0";
+        String descodificado = codificado.replace('0','o')
+        .replace('4', 'a')
+        .replace('3', 'e');
+        descodificado = descodificado.trim().replaceAll("\\s+", " ");
+        descodificado= descodificado.toUpperCase();
+
+        
+        
+        System.out.println(descodificado);
+        
 
         scanner.close();
+        scanner2.close();
 
     }
 }
